@@ -1,0 +1,31 @@
+
+
+#ifndef Pair_hpp
+#define Pair_hpp
+
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+class Pair
+{
+    // represents a entity and its value:
+    
+public:
+    Pair(string attributeName, string attributeValue);
+    Pair(string attributeName, int);
+    bool isNumber();  // is the datatype of the value of this entity integer?
+    int numberValue();
+    string stringValue();
+    string attributeName();
+    
+private:
+    string _attributeName, _attributeStringValue;
+    int _attributeNumberValue;
+     bool _isNumber;
+};
+
+
+
+#endif /* Pair_hpp */
